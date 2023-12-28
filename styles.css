@@ -1,0 +1,242 @@
+body {
+  background-color: #4e17cf;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+p {
+  font-weight: 10;
+  color: white;
+  font-size: 20px;
+  font-family: "Caveat", cursive;
+}
+
+.landing-page {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-text {
+  color: white;
+  font-size: 6vw;
+  font-family: "Bricolage Grotesque", sans-serif;
+  line-height: 0.9;
+  font-weight: bolder;
+  margin: 3% 0 0 2%;
+}
+
+h2 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 45px;
+  line-height: 1;
+  color: white;
+  font-weight: 900;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row-reverse;
+  /* height: 100vh; */
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+/* .empty-div {
+  padding: 50vw;
+  /*margin: 10vw;*/
+.section2-content h2,
+p {
+  margin: 7%;
+  width: 90%;
+}
+
+button {
+  margin-left: 7%;
+  width: 80%;
+  color: white;
+  background-color: transparent;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 0.5;
+  padding: 20px 0px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.section2-content {
+  width: 30%;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#part1 {
+  width: 100%;
+  height: 100vh;
+}
+
+.bar {
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: black;
+  z-index: -5;
+}
+
+.section3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  height: 100vh;
+}
+.empty-div3 {
+  padding: 35%;
+  /*margin: 10vw;*/
+}
+.section3-content {
+  width: 40%;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.section3-content h2 {
+  width: 90%;
+  margin: 7%;
+}
+
+.section4 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 10;
+}
+
+.canvas-cont {
+  /* not important */
+  z-index: 5;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+#canvas3d {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+}
+
+#mySplineViewer {
+  z-index: 5;
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  /* pointer-events: none; */
+  top: 3%;
+  left: 25%;
+}
+
+/* .span {
+  width: max-content;
+  font-family: monospace;
+  background-color: #4e17cf;
+  overflow: hidden; 
+  border-left: 5px solid white;
+  white-space: nowrap;
+  margin: 0 auto; 
+  animation: typing 4s steps(32), blink-caret 0.6s step-end infinite;
+  -webkit-animation: typing 4s steps(32), blink-caret 0.6s step-end infinite;
+} */
+
+.span {
+  padding: 0;
+  position: relative;
+  width: max-content;
+  margin: 0px auto;
+}
+.span::before,
+.span::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.span::before {
+  background-color: #4e17cf;
+  animation: typewrite 2s steps(15) 1.5s forwards;
+}
+
+@keyframes typewrite {
+  to {
+    left: 100%;
+  }
+}
+
+.span::after {
+  width: 2px;
+  align-items: flex-end;
+  height: 80%;
+  border-radius: 12%;
+  background: white;
+  position: absolute;
+  top: 10%;
+
+  animation: typewrite 2s steps(15) 1.5s forwards,
+    blink 500ms steps(14) infinite, disappear 20ms calc(5s + 1.5s) forwards;
+}
+
+@keyframes disappear {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    background: rgba(0, 0, 0, 0.602);
+  }
+  50% {
+    background: white;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-text {
+    margin-top: 7vh;
+  }
+
+  .section2,
+  .section3,
+  .landing-page {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .empty-div,
+  .empty-div3,
+  .keyboard {
+    padding: 50%;
+  }
+
+  .section2-content,
+  .section3-content {
+    width: 100%;
+    text-align: center; /* Center content for small screens */
+  }
+  .section4 {
+    text-align: center;
+  }
+}
