@@ -1,3 +1,3 @@
-view site at https://github.com/JuliaOse/keyboard-website
+view site at https://juliaose.github.io/keyboard-website
 inspo from @juxtaposed
 ...
